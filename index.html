@@ -1,8 +1,159 @@
-This project provides a simple, responsive webpage for the "RR Hotel". It's built using HTML, CSS, and JavaScript, focusing on a clean design and user-friendly navigation. The page includes sections for a welcome message, hotel features, room types, a gallery, a contact form, and a footer.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RR Hotel - Luxury & Comfort</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">RR</span> Hotel</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-.
-├── index.html
-├── css
-│   └── style.css
-└── js
-    └── script.js
+    <section id="showcase">
+        <div class="container">
+            <h1>Experience Unmatched Luxury and Comfort</h1>
+            <p>Your perfect getaway awaits at RR Hotel, where impeccable service meets breathtaking views.</p>
+            <a href="#contact" class="button_1">Book Now</a>
+        </div>
+    </section>
+
+    <section id="main-content">
+        <div class="container">
+            <article id="welcome">
+                <h2>Welcome to RR Hotel</h2>
+                <p>Discover a world of elegance and relaxation. RR Hotel offers a sanctuary of peace and comfort, meticulously designed to provide an unforgettable experience for our guests.</p>
+            </article>
+
+            <section id="features">
+                <div class="container">
+                    <h2>Hotel Features</h2>
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-swimming-pool"></i>
+                            <h3>Swimming Pool</h3>
+                            <p>Dive into our pristine infinity pool with stunning city views.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-utensils"></i>
+                            <h3>Fine Dining</h3>
+                            <p>Savor exquisite culinary creations at our world-class restaurants.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-spa"></i>
+                            <h3>Relaxing Spa</h3>
+                            <p>Rejuvenate your senses with our luxurious spa treatments.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-wifi"></i>
+                            <h3>High-Speed Wi-Fi</h3>
+                            <p>Stay connected with complimentary high-speed internet throughout the hotel.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="rooms">
+                <div class="container">
+                    <h2>Our Rooms</h2>
+                    <div class="room-grid">
+                        <div class="room-item">
+                            <img src="https://via.placeholder.com/300x200" alt="Standard Room">
+                            <h3>Standard Room</h3>
+                            <p>Comfortable and stylish, perfect for solo travelers or couples.</p>
+                            <p><strong>From $150/night</strong></p>
+                            <a href="#" class="button_2">View Details</a>
+                        </div>
+                        <div class="room-item">
+                            <img src="https://via.placeholder.com/300x200" alt="Deluxe Room">
+                            <h3>Deluxe Room</h3>
+                            <p>Spacious with enhanced amenities and city or garden views.</p>
+                            <p><strong>From $200/night</strong></p>
+                            <a href="#" class="button_2">View Details</a>
+                        </div>
+                        <div class="room-item">
+                            <img src="https://via.placeholder.com/300x200" alt="Suite">
+                            <h3>Suite</h3>
+                            <p>Luxurious suites offering separate living areas and premium facilities.</p>
+                            <p><strong>From $350/night</strong></p>
+                            <a href="#" class="button_2">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="gallery">
+                <div class="container">
+                    <h2>Gallery</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/400x300" alt="Hotel Lobby">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/400x300" alt="Hotel Room Interior">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/400x300" alt="Hotel Restaurant">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/400x300" alt="Hotel Pool">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="container">
+                    <h2>Contact Us</h2>
+                    <p>Have questions or want to make a reservation? Get in touch!</p>
+                    <form>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br><br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                        <button type="submit" class="button_1">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Lane, Metropolis, CA 90210</p>
+                        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-envelope"></i> info@rrhotel.com</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 RR Hotel. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
